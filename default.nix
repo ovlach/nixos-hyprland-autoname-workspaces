@@ -6,16 +6,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "hyprland-autoname-workspaces";
-  version = "0.4.4";
+  version = "1.1.11";
 
   src = fetchFromGitHub {
       owner = "hyprland-community";
       repo = "hyprland-autoname-workspaces";
       rev = "${version}";
-      sha256 = "sha256-X2RY0TkfumfTk/f0E7RnDhUkJGAkDKHd6+cy+XUyCwA=";
+      sha256 = "x9MXp2MZtrnVI3W+6xo34uUHuRnpVeXS+3vbyti1p24=";
     };
 
-  cargoSha256 = "sha256-Bf1GoQh6rnQoNX2I2lZvUpOXRDqgUvoeguqI1TMy2nk=";
+  cargoSha256 = "sha256-mSUtFZvq5+rumefJ6I9C6YzRzu64oJ/bTwaa+rrFlL4=";
 
   # Tests is nondeterministic
   doCheck = false;
